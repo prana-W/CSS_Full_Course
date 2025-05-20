@@ -1,0 +1,39 @@
+body {
+    font-size: 15px
+
+}
+
+main {
+    font-family: monospace;
+}
+
+/*The below gets applied for both h1 tags and the h2 tags*/
+h1, h2 {
+    color: blue;
+}
+
+/*The below works for the span that is inside h1*/
+h1 span {
+    color: red;
+}
+
+.gray {
+    color: gray;
+}
+
+p {
+    color: pink;
+}
+
+p {
+    color: purple;
+}
+
+.highlight {
+    color: orange;
+    text-transform: uppercase;
+}
+
+#second {
+    font-style: italic;
+}

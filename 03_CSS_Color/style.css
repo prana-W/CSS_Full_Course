@@ -1,0 +1,28 @@
+body {
+    font-size: 17px;
+
+    /*First Arial, if unavailable then second font, if that also on available then third one*/
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+
+    /*background also works fine*/
+    background-color: papayawhip;
+
+    /*color: darkblue;*/
+
+    /*The values of rgb is from 0 to 255*/
+    color: rgb(102, 102, 255);
+
+    /*a is used for transparency here (0 to 1*/
+
+    /*color: rgba(0,0,0,0.75);*/
+}
+
+p {
+
+    /*First two are for red, then the next two are for green and then the next two are for blue. THe next two will be for opacity (if available)*/
+    color: #FF0000
+
+/*    Hex values can be shortened as well*/
+
+}
