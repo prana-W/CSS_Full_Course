@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            /*width: 100vw;*/
+            width: 100%;
+        }
+    </style>
+</head>
+<body style="background-color: aliceblue;">
+
+<h2 style="color: red">As you can see in the page, we are getting an extra horizontal scrollbar in the bottom... which
+    is really
+    annoying. </h2>
+
+<h3>But why? Because the content is long (vertically) we are getting a scrollbar to the right, which takes some
+    width in our right side of the viewport. The body is set to 100vw, therefore to take the whole 100vw, it will
+    need to increase a bit size to go to that full extend, making that extra horizontal space come and giving us a
+    horizontal scrollbar</h3>
+
+<h4 style="color: #ff861e">FIX: Set the width to 100% instead of 100vw, or none at all!!!
+
+If we don't make universally select and make margin back to 0, making width to 100% will still not fix the issue,
+    the best way is to make the default style go back to margin 0, padding 0 and then make use of 100% or don't use
+the width at all, as we already want 100% which will be the default behaviour</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto culpa doloribus fugiat laboriosam mollitia
+    provident saepe sunt velit. Beatae iste numquam odio omnis, optio quas ratione sed totam velit voluptatem.</p>
+<p>Eius excepturi ipsam laboriosam, minima mollitia numquam officiis porro quod tempora veritatis! Accusantium
+    asperiores cum ducimus eaque illum iusto minus natus numquam optio quidem quo, rem repellendus reprehenderit soluta
+    totam.</p>
+<p>Fugiat, nam, non. Accusantium commodi cumque delectus dolores excepturi expedita facere in minima officia possimus
+    quae quam quis quo rem, rerum tempore ullam! Beatae dolores exercitationem hic minus officiis quaerat?</p>
+<p>Illo, ipsum, tempora. Ad asperiores beatae et fuga hic impedit nobis numquam qui, similique soluta! Aspernatur
+    debitis dolore enim est et excepturi explicabo, facilis minima numquam quasi sequi, sit, unde?</p>
+<p>Ab assumenda est illo ipsa nulla officia quidem sit tenetur? Beatae eveniet, facilis ipsum nostrum quae quasi ullam.
+    Consectetur debitis explicabo maxime neque officiis placeat quo quos tempore temporibus voluptatem.</p>
+<p>Ad alias aliquid atque, blanditiis fuga fugiat itaque labore magni non nostrum officiis provident quam quibusdam,
+    repudiandae tenetur totam ut voluptate. Eius ipsam, perferendis! Nihil odit optio sapiente tempore voluptatibus?</p>
+<p>Accusamus adipisci aperiam facilis in laborum, non officiis perspiciatis quisquam repellendus sed unde ut vel vitae.
+    Debitis magnam odit perferendis recusandae! Earum expedita facere iste laudantium, molestias quos ut. Sit!</p>
+<p>Adipisci assumenda consequatur dicta doloremque et iusto nam non perspiciatis quaerat quibusdam, reiciendis tempora
+    vel. Adipisci atque ea et fugiat id libero natus, nihil placeat praesentium qui repudiandae rerum. Ex.</p>
+<p>Cumque expedita laudantium omnis repudiandae. Aliquam cum doloremque, eveniet facere ipsam quae qui rem soluta
+    voluptas! Ab, consequatur eum, fuga illo maxime mollitia nisi pariatur porro quod, repellat repellendus totam.</p>
+<p>Aspernatur consequuntur doloribus esse incidunt, nostrum quae. A ab alias deleniti illum magni modi molestias nam non
+    nostrum quae quas, ratione? Aliquid exercitationem hic id inventore nemo quae tempore. Unde.</p>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+html {
+    font-size: 16px;
+}
+
+/* The below makes the minimum height of the body as 100vh, which is by deafult only the size upto which the content is. Also we want to do min-height, since our body might outgo the 100vh limit when the content increases, therefore we set-up the minimum height*/
+
+body {
+    min-height: 100vh;
+}
+
+/* Below is done to remove all the default style applied by the page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* The main section is taking 50% of the width of the viewport width*/
+main {
+    width: 50vw;
+}
+
+p {
+    font-size: 32px;
+    /*width: 20ch;*/
+
+}
+
+header {
+    width: 50%;
+}
+
+h1 {
+    border: 2px dashed red;
+    width: 50%;
+    font-size: 3rem;
+    padding: 0.5em;
+
+/*    Here padding will be 0.5 times the size of its own font-size. That is 0.5 times 3 rem which is 1.5 rem.*/
+
+/*    h1 is actually 25% in width of the entire page. As the header is 50% of the page and h1 is 50% of the width of the header, that means it is actually 25% of the entire page.*/
+
+
+}
+
+li {
+    font-size: 1.2rem;
+
+/*    1.2 times the size of the root element (html) */
+}
+
+footer {
+    font-size: 25px;
+}
+
+
+/*Here the footerElement is 1.5 times the size of its parent element (here footer element) as used fot font-size*/
+#footerElement {
+    font-size: 1.5em;
+}
+
+/*Padding should be ususally done with em, as it will make the size according to the font-size of its own element*/
+
+/* Font-size can be done using rem */

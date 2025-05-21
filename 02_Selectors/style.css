@@ -1,3 +1,15 @@
+/*Below is the universal selector, used to apply styles to all the elements in the pages, irrespective of type and hierarchy*/
+
+* {
+
+}
+
+/* Below is the root element*/
+html {
+
+}
+
+
 body {
     font-size: 15px
 
