@@ -24,7 +24,7 @@ h1, h2 {
     color: blue;
 }
 
-/*The below works for the span that is inside h1*/
+/*The below works for the span that is inside h1 (can be even deep down)*/
 h1 span {
     color: red;
 }

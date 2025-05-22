@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box Model II</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            border: 2px dashed red;
+            font-size: 1.5rem;
+
+            /*padding-top: 1.5rem;*/
+            /*padding-right: 2rem;*/
+            /*padding-bottom: 3rem;*/
+            /*padding-left: 4rem;*/
+
+            /*Below is a short-hand. Same can be applied for margin and borders. Convention: Top, right, bottom, left*/
+
+            padding: 1.5rem 2rem 3rem 4rem;
+
+            /*margin-top: 1.5rem;*/
+            /*margin-right: 2rem;*/
+            /*margin-bottom: 1.5rem;*/
+            /*margin-left: 2rem;*/
+
+            /*Below is also a short-hand, when top and bottom is same and left and right is same*/
+            margin: 1.5rem 2rem;
+
+            /*It means 1.5 rem for top and bottom and 2rem for left and right*/
+
+            outline: 4px solid blue;
+            outline-offset: -7px;
+        /*    Off-set means where to set the outline. Negative means inside from the outermost layer, while positive mans outside from the outermost layer.*/
+
+
+        }
+
+        .circle {
+
+            margin: 3rem auto;
+
+            /* The above means 3rem for top and bottom, while auto for left and right*/
+
+            background-color: red;
+            width: 100px;
+            height: 100px;
+
+            border: 2px solid black;
+            outline: 2px solid blue;
+            outline-offset: 0.25rem;
+
+            border-radius: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="container">
+        <h1>BOX MODEL</h1>
+    </header>
+
+<main class="container">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consequuntur cum eos provident sed! Alias at corporis delectus, dicta ea ex explicabo impedit incidunt natus nihil, non, obcaecati sapiente similique sint sunt vero voluptatem? Animi asperiores, blanditiis consequuntur cum debitis dolores earum eos facere illum ipsa laudantium maiores minima nihil quas qui rem repellendus tempora totam ullam vel veritatis voluptatum?</p>
+
+    <div class="circle"></div>
+</main>
+
+
+</body>
+</html>
