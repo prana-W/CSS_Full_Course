@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    padding: 10%;
+    font-size: 1.25rem;
+    font-family: 'PT Sans', sans-serif;
+}
+
+a {
+    text-decoration: underline;
+    cursor: pointer;
+    color: blue;
+}
+
+/* visited and hover are pseudo classes */
+
+/* If hover was above visited, then visited links won't have got hover effect
+
+a:hover {
+   color: deeppink;
+}
+
+*/
+
+a:visited {
+    color: purple;
+}
+
+a:active {
+    color: red;
+}
+
+a:hover, a:focus {
+    color: deeppink;
+    background-color: gold;
+
+    /*opacity: 0.7;*/
+}
+
+/* Here even if we hover over a visited link, it changes color, but if we would  have put hover above visited, then, it won't have worked!! Since visited would have overwritten the style.*/
+
+
+/* Therefore the correct/preferred order should be: a, a:visited, a:active, a:hover*/
+
+/* a:focus is a pseudo class when the link is in focus by pressing tab or screen reader*/
