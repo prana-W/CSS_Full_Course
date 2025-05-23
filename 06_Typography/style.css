@@ -1,0 +1,44 @@
+main {
+    padding: 10%;
+    font-size: 1.25rem;
+    color: purple;
+
+    /* First is the primary, the rest are fall-back (if first fails to load)*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+/* By default, the children will also inherit the font-size of the parent element. But here, the button and the input field are not inheriting the font-size of the parent element (main). Therefore, we have to use inherit property for the font size of these*/
+
+input, button {
+    /*The below enables the element to inherit all the font style from its parent element*/
+    font: inherit;
+    /*color: inherit;*/
+/*    We need to do the above for the color to also be inherited, which by default is not inherited*/
+}
+
+/* Text Settings  */
+main p {
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-align: justify;
+    text-indent: 3em;
+
+
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    word-spacing: 1.5em;
+
+    /*    We can put number or words (like bolder) etc*/
+    font-weight: 800;
+
+    font-style: italic;
+
+
+}
+
+.customFont {
+    /* Either include the Google Font link in the HTML or include the import statement in the CSS file*/
+    font-family: 'Roboto Condensed', sans-serif ;
+
+}
+
