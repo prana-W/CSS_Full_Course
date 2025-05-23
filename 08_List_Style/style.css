@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    padding: 5% 10%;
+    font-size: 1.2rem;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* li has more specificity than ol and ul, hence even though color styles fro ul and ol are below, the li element overwrites them except ul li and ol li, which again has more specificity than ul, ol and li indivisulaly*/
+
+li {
+    color: black
+}
+
+ol {
+    list-style-type: decimal-leading-zero;
+    padding: 5px;
+}
+
+ul {
+
+
+    list-style-type: square;
+    list-style-position: inside;
+    list-style-image: url('images/checkmark.png');
+
+    /*list-style: square url('images/checkmark.png') inside;*/
+
+    text-align: center;
+    color: blue;
+    /* It also colors the bullet/any other sign*/
+    line-height: 1.8;
+
+}
+
+ul li {
+/*  It sets only for the li of ul*/
+    color: red;
+}
+
+ol li:nth-child(3) {
+    color: yellow;
+}
+/* nth-child() is another pseudo class*/
+
+ol li:nth-child(odd) {
+    color: deeppink;
+}
+
+/* Pseudo-element */
+
+/* marker is a pseudo-element for selecting the marker box of list item*/
+::marker {
+    color: darkblue;
+    font-weight: bold;
+    /*content: "Hey"*/
+/*    The above replaces all the marker with a text */
+}

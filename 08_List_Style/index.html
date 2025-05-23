@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Lists</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+    <h1>CSS Lists</h1>
+</header>
+<main>
+    <article>
+        <h2>Ordered List</h2>
+        <ol start="4">
+            <li>I have set the start attribute in the HTML to 4</li>
+            <li>You can also add reversed attribute to reverse count the number</li>
+            <li>Step One</li>
+            <li value="16">This li has a value attribute set to 16</li>
+            <li>This doesn't have any attribute yet I am getting 17 since the one above is having a value of 16</li>
+        </ol>
+    </article>
+    <article>
+        <h2>Unordered List</h2>
+        <ul>
+            <li>Specificity: ul li or ol li > li > ol or ul</li>
+            <li>Hence, changing any style for li before the ul or ol still overrides the change due to specificity</li>
+            <li>Step Three</li>
+        </ul>
+    </article>
+</main>
+</body>
+
+</html>
