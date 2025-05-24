@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+p {
+    background-color: lightgray;
+}
+
+/* Normally we can't set height and margin-top and margin-bottom in an inline element. But by setting the display to inline-block, we can change those settings easily. Hre we have got a hybrid of inline and block level element.*/
+.opposite {
+    display: inline-block;
+    background-color: #333;
+    color: whitesmoke;
+    height: 200px;
+    padding: 4rem;
+    margin-top: 4rem;
+}
+
+/* Turning a block from inline to inline-block can be useful in like converting a link into a button (where we would want to give the link a height and margin-top and margin-bottom) or converting a list item into row (horizontal) from vertical*/
