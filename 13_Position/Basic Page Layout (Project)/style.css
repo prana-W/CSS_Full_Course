@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Lobster&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+
+/*    This allows smooth scroll when pressing buttons in footer, which takes us to different section in the page*/
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    min-height: 200vh;
+}
+
+section {
+    height: 100vh;
+}
+
+.blue {
+    background-color: #3f51b5;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: #dc3545;
+}
+
+header, footer {
+    color: #fff;
+    text-align: center;
+    height: 100px;
+
+}
+
+header {
+    font-size: 5rem;
+    position: sticky;
+    top: 0;
+}
+
+footer {
+    background-color: black;
+    position: fixed;
+    /* footer is no longer getting the entire width of the page, and no space is created for the element in the page layout */
+    bottom: 0;
+    width: 100%;
+    font-size: 2rem;
+
+    /* The below is another way
+
+    position: sticky;
+    bottom: 0;
+
+    */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.social {
+    background-color: royalblue;
+    color: white;
+    font-size: inherit;
+/*     Since, the above is a button, it doesn't normally inherits font-size property, hence we need to specify it.*/
+    position: fixed;
+    top: 30%;
+    left: 0;
+    z-index: 1;
+}

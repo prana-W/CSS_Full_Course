@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Lobster&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    min-height: 200vh;
+}
+
+.outer-container {
+    border: 3px dashed #000;
+    width: 75vw;
+    height: 85vh;
+    margin: 40px auto;
+    position: relative;
+}
+
+.inner-container {
+    border: 2px solid #00f;
+    width: 40vw;
+    height: 50vh;
+    margin: 200px auto;
+    /*position: relative;*/
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    padding: 1rem;
+}
+
+.absolute {
+    background-color: blue;
+    position: absolute;
+/*    position is set to static by default for all elements */
+    top: 40px;
+    left: 20px;
+    /*left: -10000px;*/
+
+/*    The positioning is done wrt ancestor element having relative postion, if none is found, then the absoute position will be calculated from browser. If multiple ancestors have the relative postion. then the closest ancestor will be the chosen one and that element would be used to calculate the absolute  position.*/
+
+    z-index: 3;
+/*    Setting z-index to 3 changes the value of z-index to 3*/
+
+
+
+/*    Sometimes when we want to visibally remove any element from theview, we can set the position to absolute and set for example left: -10000px or something else, this rmeoves the elemenet visibly from the page, yet still being there in the DOM. */
+}
+
+.relative {
+    background-color: red;
+    position: relative;
+
+    /* here relative means relative to the parent element */
+    top: 300px;
+    left: 100px;
+}
+
+.fixed {
+    background-color: green;
+    position: fixed;
+    top: 100px
+
+/*    The position is from the browser and remains fixed thoroughout, even if we scroll*/
+}
+
+/* Fixed element comes over absolute and relative blocks (if default), this is because by default, whatever comes last in HTML stays on top, we can change this property by using z-index on any of the blocks accordingly.*/
+
+.sticky {
+    background-color: black;
+    position: sticky;
+    top: 10px;
+
+/*    The block stays at whatever position it is defined and then sticks to the desired postion momenterily when the page is moved (scrolled up) and then stays there, till its container stays.*/
+
+}
