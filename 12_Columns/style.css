@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+.columns {
+    /*column-count: 4;*/
+/*     The above simply spilts the element into 4 coloumns and the content gets divided in them. Try resizing the page and seeing the effect. */
+
+/*    column-width: 250px;*/
+/*    It means column-width will never be less than 250 px. */
+
+    /* Therefore, 4 coloumns will be the maximum limit, if the page width is small and we have mentioned column-width, then coloumn will decrease to give a maximum of column-width*/
+
+    columns: 4 250px;
+    column-rule: 3px solid black;
+/*    column-rule is similar to border, it will exist between two columns*/
+
+    column-gap: 3rem;
+}
+
+.columns p {
+    margin-top: 0;
+
+}
+
+.columns h2 {
+    background-color: black;
+    color: white;
+    margin-top: 0;
+    padding: 1rem;
+    break-inside: avoid;
+/*    Sometimes, part of h2 will occur in one columna nd the other part in another column, to prevent this we use break-inside property and set it to avoid. This avoids such type of breaking.*/
+
+    /*break-before: column;*/
+/*    This will  make the element element appear in the top of the coloumn always. But everything shrinks and unexpected thing happens, when minimizing th window, resulting in bad things happening */
+}
+
+
+/* Margin collapsing prevents doubling of margin, for example in margin-top and margin-bottom*/
+
+.columns .quote {
+    margin-top: 2rem;
+    /* The above will only work if we use two class selectors to select the element, else the columns p will have more specificity and will not allow this to modify margin-top of it*/
+    font-size: 2rem;
+    text-align: center;
+    column-span: all;
+/*     the above allows the text to span in the entire column.*/
+}
+
+.nowrap {
+    white-space: nowrap;
+/*    The above allows us to prvent the break in span*/
+}
